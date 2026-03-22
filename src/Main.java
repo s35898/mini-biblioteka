@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         książka harryPotter =
-        new książka("Harry potter", "J.K. Rowling", 300, true);
+                new książka("Harry potter", "J.K. Rowling", 300, true);
 
         System.out.println(harryPotter);
 
@@ -12,8 +12,18 @@ public class Main {
         książka rok1984 =
                 new książka("Rok 1984", "George Orwell", 236, false);
 
-        harryPotter.wypozycz();
-    }
 
 
+
+    czytelnik jeden =
+            new czytelnik("Marcin", "Nowak", 345, 2);
+    czytelnik dwa =
+            new czytelnik("Tomasz", "Kaczmarek", 346, 4);
+    jeden.zwiekszLiczbeWypozyczen();
+    jeden.wypiszDane();
+    dwa.zmniejszLiczbeWypozyczen();
+    dwa.wypiszDane();
+
+
+}
 }
